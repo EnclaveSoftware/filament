@@ -424,7 +424,7 @@ DECL_DRIVER_API_4(viewport,
         size_t, width,
         size_t, height)
 
-DECL_DRIVER_API_2(bindUniforms,
+DECL_DRIVER_API_2(bindUniformBuffer,
         size_t, index,
         Driver::UniformBufferHandle, ubh)
 
