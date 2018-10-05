@@ -593,7 +593,7 @@ constexpr size_t OpenGLDriver::getIndexForBufferTarget(GLenum target) noexcept {
         case GL_PIXEL_UNPACK_BUFFER:        index = 7; break;
         default: index = 8; break; // should never happen
     }
-    assert(index < 8 && index < sizeof(state.buffers.targets)/sizeof(state.buffers.targets[0])); // NOLINT(misc-redundant-expression)
+    assert(index < sizeof(state.buffers.genericBinding)/sizeof(state.buffers.genericBinding[0])); // NOLINT(misc-redundant-expression)
     return index;
 }
 
